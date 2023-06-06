@@ -3,31 +3,88 @@
 
 <head>
     <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+  body {
+      background-image:url('https://i.pinimg.com/originals/de/44/d5/de44d5172d2b0e3cfeec35a15f9359d8.jpg');
+      background-size: cover;
+      background-repeat:repeat-y;
+    }
+div{ 
+             
+             color: white;
+             width: 400px;
+             margin:auto;
+             padding: 0px 5px;
+             background-color:none;}
+h1{
+             color: white;
+             font-size:50px;
+             position:relative;
+}
+label,input{
+             font-size:20px;
+             display: block;
+}
+label{
+             text-align:left;
+             position:relative;
+}
+input[type="email"]{
+             position: relative;
+             font-size:20px;
+}
+
+input[type="password"]{
+             position: relative;
+             font-size: 20px;
+}
+input[type="text"]{
+             position: relative;
+             font-size:20px;
+}
+
+input[type="submit"]{
+
+             background-color:whitesmoke;
+             position: relative;left:50px;
+             border:rgb(10, 8, 8);
+             color: black;
+             padding: 20px 75px;
+             text-align: center;
+             text-decoration: none;
+             display:block;
+             font-size: 25px; }
+
+button{
+  width: 100%;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+</style>
 </head>
 
 <body>
-    <h1>User Registration</h1>
-
+    <div>
+      <h1 class="pt-5">User Registration</h1>
     <form action="file:///C:/Users/Nihas/OneDrive/Desktop/website/login.html">
       <br>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" id="username" name="username" class="form-control"  required>
       <br>
-      <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      <br>
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control"  required>
         <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-       <br>
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" name="password" class="form-control"  required>
         <br>
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
+        <label for="confirm_password" class="form-label">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" class="form-control"  required>
       <br>
-      <br>
-        <input type="submit" value="Register">
+        <button type="submit" class="btn btn-primary">Register</button>
     <br>
+    <br>
+    </div>
     </form>
 </body>
 
